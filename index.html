@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css"
+    />
+    <title>Journals</title>
+
+    <style>
+.body {
+	padding: 0px !important;
+}
+
+.container {
+	text-align: center;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-main {
+	width: 90vw;
+	margin-top: 25px;
+	padding-left: 10px;
+	padding-bottom: 25px;
+	text-align: left;
+}
+
+.container-cardsAll {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card {
+	margin: 10px;
+}
+
+</style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Journals</h1>
+        <div class="container">
+          <p>It looks like a Medium, but not that fancy.</p>
+          <button class="btn-warning" onclick="location.href='index.html';">View All Articles</button>
+          <button class="btn-success" onclick="location.href='new.html';">Create Article</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-main padding-none">
+        <h3>Recent articles:</h3>
+
+        <div class="container-cardsAll">
+          <div class="card" style="width: 15rem;">
+            <div class="card-body">
+              <h4 class="card-title">Article Title!</h4>
+              <h5 class="card-subtitle">Lastname, FirstName Author.</h5>
+              <p class="card-text">
+                The first lines of a good article trying to read something who
+                knows...
+              </p>
+              <a class="card-link link-read" href="#">
+                Read
+              </a>
+              <a class="card-link" href="#">
+                Edit
+              </a>
+              <a class="card-link" href="#">
+                Delete
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

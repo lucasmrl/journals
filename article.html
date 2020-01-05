@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css"
+    />
+    <title>Journals</title>
+
+    <style>
+      .body {
+        padding: 0px !important;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container-main {
+        width: 90vw;
+        margin-top: 25px;
+        padding-left: 10px;
+        padding-bottom: 25px;
+        text-align: left;
+      }
+
+      .container-cardsAll {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        margin: 10px;
+      }
+
+      .article-view {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Journals</h1>
+        <div class="container">
+          <p>It looks like a Medium, but not that fancy.</p>
+          <button class="btn-warning" onclick="location.href='index.html';">View All Articles</button>
+          <button class="btn-success" onclick="location.href='new.html';">Create Article</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-main padding-none">
+        <div class="paper container article-view">
+          <article class="article">
+            <h1 class="article-title"><a href="">Article Title</a></h1>
+            <p class="article-meta">Written by <a href="#">Super User</a></p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+              iure totam nam debitis aliquid impedit, et quas omnis aspernatur
+              optio molestias ex laborum quia. Ducimus culpa tempore, veritatis
+              officia delectus dolore dignissimos reprehenderit vero, sunt odit
+              placeat est non molestiae ipsa nam velit in iusto hic quasi
+              similique facere. Maxime?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+              iure totam nam debitis aliquid impedit, et quas omnis aspernatur
+              optio molestias ex laborum quia. Ducimus culpa tempore, veritatis
+              officia delectus dolore dignissimos reprehenderit vero, sunt odit
+              placeat est non molestiae ipsa nam velit in iusto hic quasi
+              similique facere. Maxime?
+            </p>
+
+            <div class="row">
+              <button class="btn-secondary">Edit</button>
+              <button class="btn-danger">Delete</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
