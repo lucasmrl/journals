@@ -1,0 +1,106 @@
+body {
+  padding: 0px !important;
+  margin-top: 0px;
+}
+
+header {
+  background-color: #1e90ff;
+}
+
+h1 {
+  margin: 0px !important;
+  color: white;
+}
+
+h3 {
+  margin: 5px !important;
+  padding-bottom: 15px;
+}
+
+.container {
+  align-items: center;
+  padding: 10px;
+}
+
+.container p {
+  color: white;
+}
+
+.container-main h1 {
+  padding-bottom: 17px;
+}
+
+main {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-main {
+  width: 90vw;
+  margin-top: 25px;
+  padding-left: 10px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.container-main p {
+  padding-bottom: 13px;
+  color: black;
+}
+
+.container-cardsAll {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+}
+
+.title-area-article {
+  width: 100%;
+}
+
+.text-area-article {
+  width: 100%;
+  height: 300px;
+}
+
+.post-btn {
+  margin-top: 30px;
+}
+
+.container {
+  text-align: center;
+}
+
+.article-view {
+  text-align: left;
+}
+
+/* unvisited link */
+.container-cardsAll a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+/* visited link */
+.container-cardsAll a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.container-cardsAll a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+/* selected link */
+.container-cardsAll a:active {
+  color: blue;
+  text-decoration: none;
+}

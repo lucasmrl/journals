@@ -1,0 +1,32 @@
+{
+  "name": "journals",
+  "version": "1.0.0",
+  "description": "A simple web-based app to Create, View, Update, and Delete articles. First full-stack project. Built with PaperCSS, Pug, Node/Express.js, and MongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l310301/journals.git"
+  },
+  "author": "Lucas Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l310301/journals/issues"
+  },
+  "homepage": "https://github.com/l310301/journals#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7",
+    "pug": "^2.0.4"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}

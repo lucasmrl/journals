@@ -1,0 +1,35 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='https://unpkg.com/papercss@1.6.1/dist/paper.min.css')
+  link(rel='stylesheet' href='/css/style.css')
+  title Journals
+header
+  .container
+    h1 Journals
+    .container
+      p It looks like a Medium, but not that fancy.
+      button.btn-warning(onclick="location.href='/';")
+        | View All Articles
+      | 
+      button.btn-success(onclick="location.href='/new';")
+        | Create Article
+main
+  .container-main.padding-none
+    h3 Recent Articles 
+      span.badge.secondary= allJournals.length
+    .container-cardsAll
+      each article in allJournals.reverse()
+        .card(style='width: 15rem;')
+          .card-body
+            h4.card-title= `${article.title.slice(0, 80)}...`
+            h5.card-subtitle= `${article.lastName}, ${article.firstName}`
+            p.card-text= `${article.text.slice(0, 80)}...`
+            a.card-link.link-read(href=`/article/${article._id}`)
+              | Read
+            a.card-link(href=`/update/${article._id}`)
+              | Edit
+            a.card-link(href=`/delete/${article._id}`)
+              | Delete

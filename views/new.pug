@@ -1,0 +1,36 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='https://unpkg.com/papercss@1.6.1/dist/paper.min.css')
+  link(rel='stylesheet' href='/css/style.css')
+  title New Article
+header
+  .container
+    h1 Journals
+    .container
+      p It looks like a Medium, but not that fancy.
+      button.btn-warning(onclick="location.href='/';")
+        | View All Articles
+      | 
+      button.btn-success(onclick="location.href='/new';")
+        | Create Article
+main
+  .container-main.padding-none
+    .paper.container.article-view
+      h3 New article:
+      form(action='/newJournal' method='post')
+        .form-group
+          label(for='paperInputs1') Author First Name
+          input#firstName(type='text' name='firstName' placeholder='Name')
+        .form-group
+          label(for='paperInputs1') Author Last Name
+          input#lastName(type='text' name='lastName' placeholder='Last Name')
+        .form-group
+          label(for='paperInputs1') Title:
+          input#title.title-area-article(type='text' name='title' placeholder='Some nice title here.')
+        .form-group
+          label Content:
+          textarea.no-resize.text-area-article(name='text' placeholder='Write anything that you feel inspired.')
+          button.btn-success.post-btn Post

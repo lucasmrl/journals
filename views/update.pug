@@ -1,0 +1,36 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='https://unpkg.com/papercss@1.6.1/dist/paper.min.css')
+  link(rel='stylesheet' href='/css/style.css')
+  title Edit Journal
+header
+  .container
+    h1 Journals
+    .container
+      p It looks like a Medium, but not that fancy.
+      button.btn-warning(onclick="location.href='/';")
+        | View All Articles
+      | 
+      button.btn-success(onclick="location.href='/new';")
+        | Create Article
+main
+  .container-main.padding-none
+    .paper.container.article-view
+      h3 Update article:
+      form(method='post', action='/update/' + articleToUpdate._id)
+        .form-group
+          label(for='paperInputs1') Author First Name
+          input#firstName(type='text' name='firstName' value= articleToUpdate.firstName)
+        .form-group
+          label(for='paperInputs1') Author Last Name
+          input#lastName(type='text' name='lastName' value= articleToUpdate.lastName)
+        .form-group
+          label(for='paperInputs1') Title:
+          input#title.title-area-article(type='text' name='title' value= articleToUpdate.title)
+        .form-group
+          label Content:
+          textarea.no-resize.text-area-article(name='text') #{articleToUpdate.text}
+          button.btn-secondary.post-btn Update
