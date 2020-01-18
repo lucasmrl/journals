@@ -57,7 +57,27 @@ main {
 }
 
 .card {
+  display: flex;
+  height: 100%;
   margin: 10px;
+}
+
+.article-view h1 {
+  color: black;
+}
+
+.card-body {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+}
+
+.card-body-links {
+  display: flex;
+  height: 20%;
+  align-self: flex-start;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .title-area-article {
@@ -79,6 +99,11 @@ main {
 
 .article-view {
   text-align: left;
+}
+
+.container-cardsAll a {
+  background-image: none !important;
+  text-decoration: none !important;
 }
 
 /* unvisited link */

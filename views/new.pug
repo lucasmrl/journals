@@ -20,6 +20,7 @@ main
   .container-main.padding-none
     .paper.container.article-view
       h3 New article:
+      p(style="color: red;") Please, fill out all the fields in order to post your article.
       form(action='/newJournal' method='post')
         .form-group
           label(for='paperInputs1') Author First Name

@@ -27,9 +27,10 @@ main
             h4.card-title= `${article.title.slice(0, 80)}...`
             h5.card-subtitle= `${article.lastName}, ${article.firstName}`
             p.card-text= `${article.text.slice(0, 80)}...`
-            a.card-link.link-read(href=`/article/${article._id}`)
-              | Read
-            a.card-link(href=`/update/${article._id}`)
-              | Edit
-            a.card-link(href=`/delete/${article._id}`)
-              | Delete
+            .card-body-links
+              a.card-link.link-read(href=`/article/${article._id}`)
+                | Read
+              a.card-link(href=`/update/${article._id}`)
+                | Edit
+              a.card-link(href=`/delete/${article._id}` style="color: #ff6347;")
+                | Delete

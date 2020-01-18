@@ -6,7 +6,7 @@ exports.allJournals = async (req, res) => {
         const allJournals = await Journal.find();
 
         res.status(200).render('base', {
-            allJournals
+            allJournals,
         });
     } catch (err) {
         res.status(404).json({
@@ -73,10 +73,8 @@ exports.newJournal = async (req, res) => {
 
         res.redirect('/');
     } catch (err) {
-        res.status(400).json({
-            status: 'fail',
-            message: err
-        });
+        res.redirect('/');
+        console.log(err);
     }
 };
 

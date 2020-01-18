@@ -20,14 +20,11 @@ main
   .container-main.padding-none
     .paper.container.article-view
       article.article
-        h1.article-title
-          a(href='')= singleArticle.title
+        h1.article-title= singleArticle.title
         p.article-meta
-          | Written by 
-          a(href='#')= `${singleArticle.lastName}, ${singleArticle.firstName}`
+          | Written by #{singleArticle.lastName}, #{singleArticle.firstName}
           br
-          | Posted on 
-          a(href='#')= `${singleArticle.createdAt.toLocaleString('en-us', {day: 'numeric', month: 'long', year: 'numeric'})}`
+          | Posted on #{singleArticle.createdAt.toLocaleString('en-us', {day: 'numeric', month: 'long', year: 'numeric'})}
         p= singleArticle.text
         .row
           - const articleID = singleArticle._id;
