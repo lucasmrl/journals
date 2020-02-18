@@ -1,6 +1,6 @@
 # Journals
 
-A simple web-based app to Create, View, Update, and Delete articles. First **full-stack project**. Built with PaperCSS, Pug, Node/Express.js, and MongoDB.
+My first **full-stack project**. A simple web-based app to Create, View, Update, and Delete articles. Built with PaperCSS, Pug, Node/Express.js, and MongoDB.
 
 [Live Demo](https://appjournals.herokuapp.com/) - https://appjournals.herokuapp.com/
 
